@@ -1,10 +1,10 @@
-"use client"
-import Image from 'next/image';
-import CustomButton from './CustomButton';
+"use client";
+import Image from "next/image";
+import CustomButton from "./CustomButton";
 const Hero = () => {
-    const handleScroll = () => {
-        console.log("hello")
-    }
+  const handleScroll = () => {
+    console.log("hello");
+  };
   return (
     <section>
       <div>
@@ -13,12 +13,14 @@ const Hero = () => {
         <CustomButton title={"Explore Cars"} style={"bg-primary-blue text-white rounded-full mt-10 p-2"} handleClick={handleScroll} />
       </div>
       <div>
-        <div>
-          <Image src={"/hero.png"} fill alt='Hero Image' className='object-contain' />
+        <div className="size-52 bg-hero-bg h-20 w-20">
+        </div>
+        <div className="">
+          <Image src={"/hero.png"} fill alt="Hero Image" className="object-contain" />
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Hero
+export default Hero;

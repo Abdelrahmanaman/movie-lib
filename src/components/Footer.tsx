@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-5">
-      <div className="flex flex-col gap-8">
+    <footer className="flex flex-col gap-5 md:flex-row md:justify-between md:px-20 md:py-10">
+      <div className="flex flex-col gap-8 md:col-span-1">
         <Image src={"/logo.svg"} width={120} height={120} alt="Logo Car Hub" />
         <span className="flex flex-col gap-2 text-sm text-gray-500">
           Carhub 2024
@@ -12,7 +12,7 @@ const Footer = () => {
         </span>
       </div>
       <div className="">
-        <ul className="grid grid-cols-4 gap-x-10 gap-y-20">
+        <ul className="grid grid-cols-4 gap-x-10 gap-y-10 md:flex md:gap-40 md:flex-wrap">
           <li className="col-span-2 flex-col flex gap-4 text-gray-500 font-light">
             <span className="font-bold text-black">About</span>
             <ul className="flex flex-col gap-4 f">
